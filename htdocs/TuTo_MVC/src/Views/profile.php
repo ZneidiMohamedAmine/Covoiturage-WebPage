@@ -7,6 +7,19 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<div class="header">
+        <?php
+        session_start(); // Start the session
+
+        // Check if user is authenticated
+        if (isset($_SESSION['user'])) {
+            // User is authenticated, display logout button or other authenticated content
+            echo '<form action="logout" method="POST">';
+            echo '<button type="submit">Logout</button>';
+            echo '</form>';
+        }
+            ?>
+</div>
     <div class="profile-page">
         <div class="profile-header">
             <img src="profile-large.jpg" alt="Profile Picture">

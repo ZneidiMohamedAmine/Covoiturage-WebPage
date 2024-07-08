@@ -17,7 +17,13 @@
                     echo "<div>" . implode(" ",$error) . " </div>";
             ?>
             <button name="submit" type="submit">Login</button>
+            
         </form>
+
+        <br>
+            <form action="register" method="POST">
+            <button type="submit" value="register">Register</button>
+            </form>
     </div>
 </body>
 </html>

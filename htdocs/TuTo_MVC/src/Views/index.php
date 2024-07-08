@@ -50,7 +50,7 @@
             <p><strong>Departure:</strong> <?php echo $trajet['date']; ?></p>
             <p><strong>Seats Available:</strong> <?php echo $trajet['nbr_place'] - $trajet['nbr_place_occupe']; ?></p>
             <p><strong>Price:</strong> €<?php echo $trajet['prix']; ?></p>
-            <form action="reservation.php" method="post">
+            <form  method="post">
                 <input type="hidden" name="trajet_id" value="<?php echo $trajet['id_trajet']; ?>">
                 <button type="submit" name="reserve" class="reserve-btn">Reserve</button>
             </form>

@@ -26,5 +26,7 @@ class HomeController extends Controller
         $this->render('index' , [
             'trajets' => $trajetsArray,
         ]);
+
+        
     }
 }
